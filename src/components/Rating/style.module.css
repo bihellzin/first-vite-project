@@ -1,0 +1,32 @@
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rating > button {
+  background-color: #262f38;
+  color: #7b838e;
+  padding: 15px;
+  border-style: solid;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border-width: 0;
+  font-size: 18px;
+}
+
+.rating > button:hover {
+  background-color: #fc7613;
+  color: var(--white);
+}
+
+.rating > button.selectedrate {
+  color: var(--white);
+  background-color: #7c8898;
+}
