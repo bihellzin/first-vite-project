@@ -10,15 +10,15 @@
   padding: 15px;
   border-style: solid;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.3s;
   cursor: pointer;
   border-width: 0;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .rating > button:hover {
@@ -29,4 +29,12 @@
 .rating > button.selectedrate {
   color: var(--white);
   background-color: #7c8898;
+}
+
+@media screen and (min-width: 375px) {
+  .rating > button {
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+  }
 }
