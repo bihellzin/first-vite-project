@@ -14,12 +14,14 @@
 h1 {
   color: #f3f6f6;
   font-size: 24px;
+  text-align: left;
 }
 
 p {
   color: #7b838e;
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
 }
 
 .submitbutton {
