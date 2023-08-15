@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import styles from './style.module.css';
+import React, { useEffect, useState } from "react";
+import styles from "./style.module.css";
 
 interface RatingProps {
-  setRate: React.Dispatch<React.SetStateAction<number | null>>
+  setRate: React.Dispatch<React.SetStateAction<number | null>>;
 }
 
 const Rating: React.FC<RatingProps> = ({ setRate }) => {
@@ -22,6 +22,7 @@ const Rating: React.FC<RatingProps> = ({ setRate }) => {
     <div className={styles.rating}>
       {rates.map((rate) => (
         <button
+          key={rate}
           className={`${selectedRate === rate && styles.selectedrate}`}
           onClick={() => handleClickRate(rate)}
         >
